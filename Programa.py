@@ -1,4 +1,7 @@
 '''
+Codigo que cifra mediante el uso de sDES
+Antonio Roblero Alejandro Jesús
+Rojas Mendez Gabriel
 '''
 import fileinput
 
@@ -196,7 +199,7 @@ def decryption(array):
 key_generation()
 
 if "E" == e:
-    print(encryption(plaintext))
+    print("".join(str(i) for i in encryption(plaintext)))
 else:
     key_generation()
-    print(decryption(plaintext))
+    print("".join(str(i) for i in decryption(plaintext)))
